@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="小兔鲜儿官网，致力于打造全球最大的食品、生鲜电商购物平台。">
+  <meta name="keywords" content="小兔鲜儿,食品,生鲜,服装,家电,电商,购物">
+  <title>小兔鲜儿-新鲜、惠民、快捷！</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index2.css">
+  <link rel="stylesheet" href="./css/time.css">
+  <link rel="stylesheet" href="./css/tanchuang.css">
+  <link href="css/elevator.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="shortcut">
+    <div class="wrapper">
+      <ul>
+
+        <li><a href="gerenxinxi.html">依萝香的账户</a></li>
+        <li><a href="cart.html">我的订单</a></li>
+        <li><a href="#">会员中心</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="#">在线客服</a></li>
+        <li><a href="#"><span class="iconfont icon-mobile-phone"></span>手机版</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header wrapper">
+    <div class="logo">
+      <h1><a href="#">小兔鲜儿</a></h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">生鲜</a></li>
+        <li><a href="#">美食</a></li>
+        <li><a href="#">餐厨</a></li>
+        <li><a href="#">电器</a></li>
+        <li><a href="#">居家</a></li>
+        <li><a href="#">洗护</a></li>
+        <li><a href="#">孕婴</a></li>
+        <li><a href="#">服装</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <span class="iconfont icon-search"></span>
+      <input type="text" placeholder="搜一搜">
+    </div>
+    <div class="cart">
+      <a href="cart.html"><span class="iconfont icon-cart-full"></span></a>
+      <i class="count">2</i>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="wrapper">
+      <ul class="pic">
+        <li><a href="#"><img src="./uploads/banner1.png" alt=""></a></li>
+      </ul>
+      <div class="subnav">
+        <ul>
+          <li>
+            <div><a href="#" class="classify">生鲜</a><a href="#">水果</a><a href="#">蔬菜</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">美食</a><a href="#">面点</a><a href="#">干果</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">餐厨</a><a href="#">数码产品</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">电器</a><a href="#">床品</a><a href="#">四件套</a><a href="#">被枕</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">居家</a><a href="#">奶粉</a><a href="#">玩具</a><a href="#">辅食</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">洗护</a><a href="#">洗发</a><a href="#">洗护</a><a href="#">美妆</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">孕婴</a><a href="#">奶粉</a><a href="#">玩具</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">服饰</a><a href="#">女装</a><a href="#">男装</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">杂货</a><a href="#">户外</a><a href="#">图书</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+          <li>
+            <div><a href="#" class="classify">品牌</a><a href="#">品牌制造</a></div>
+            <span class="iconfont icon-arrow-right-bold"></span>
+          </li>
+
+        </ul>
+      </div>
+      <ol>
+        <li class="current"><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+      </ol>
+    </div>
+  </div>
+  <!-- 弹窗内容 -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="box">
+        <p class="now"></p>
+        <h2>秒杀倒计时</h2>
+        <div class="time">
+          <span class="hours">23</span><strong>:</strong>
+          <span class="minutes">30</span><strong>:</strong>
+          <span class="seconds">26</span>
+        </div>
+        <p class="end">2024年6月18日开抢</p>
+      </div>
+    </div>
+  </div>
+  <div class="goods wrapper">
+    <!-- 标题 -->
+    <div class="title">
+      <div class="left">
+        <h3>新鲜好物</h3>
+        <p>新鲜出炉 品质靠谱</p>
+      </div>
+      <div class="right">
+        <a href="#" class="more">查看全部<span class="iconfont icon-arrow-right-bold"></span></a>
+      </div>
+    </div>
+    <!-- 内容 -->
+    <div class="bd">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/goods1.png" alt=""></div>
+            <div class="txt">
+              <h4>KN95级莫兰迪色防护口罩</h4>
+              <p>¥<span>79</span></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/goods2.png" alt=""></div>
+            <div class="txt">
+              <h4>紫檀外独板三层普洱茶盒</h4>
+              <p>¥<span>566</span></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/goods3.png" alt=""></div>
+            <div class="txt">
+              <h4>法拉蒙高颜值记事本可定制</h4>
+              <p>¥<span>58</span></p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/goods4.png" alt=""></div>
+            <div class="txt">
+              <h4>科技布布艺沙发</h4>
+              <p>¥<span>3579</span></p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="recommend wrapper">
+    <!-- 标题 -->
+    <div class="title">
+      <div class="left">
+        <h3>人气推荐</h3>
+        <p>人气爆款 不容错过</p>
+      </div>
+    </div>
+    <!-- 内容 -->
+    <div class="bd">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/recommend1.png" alt=""></div>
+            <div class="txt">
+              <h4>特惠推荐</h4>
+              <p>我猜得到 你的需要</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/recommend2.png" alt=""></div>
+            <div class="txt">
+              <h4>爆款推荐</h4>
+              <p>人气好物推荐</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/recommend3.png" alt=""></div>
+            <div class="txt">
+              <h4>节日礼品一站买全</h4>
+              <p>编辑尽心整理推荐</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="./uploads/recommend4.png" alt=""></div>
+            <div class="txt">
+              <h4>鲜花园艺</h4>
+              <p>给生活增加仪式感</p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="fresh wrapper">
+    <!-- 标题 -->
+    <div class="title">
+      <div class="left">
+        <h3>生鲜</h3>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#" class="active">热门</a></li>
+          <li><a href="#">蔬菜</a></li>
+          <li><a href="#">肉禽蛋</a></li>
+          <li><a href="#">水果</a></li>
+          <li><a href="#">海鲜</a></li>
+          <li><a href="#">零食</a></li>
+          <li><a href="#">饮料</a></li>
+        </ul>
+        <a href="#" class="more">查看全部<span class="iconfont icon-arrow-right-bold"></span></a>
+      </div>
+    </div>
+    <!-- 内容 -->
+    <div class="content">
+      <div class="left">
+        <a href="#"><img src="./uploads/fresh_left.png" alt=""></a>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh1.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>双味千层，手抓饼烤肉组合</h4>
+                  <p>240g/袋 4片装</p>
+                  <p>加热即食</p>
+                </div>
+                <p class="price">¥<span>89.99</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh2.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>云南甘蔗慢熬红糖馒头</h4>
+                  <p>220g/袋 5个装</p>
+                  <p>加热即食</p>
+                </div>
+                <p class="price">¥<span>9.00</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh3.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>日式风味小圆饼</h4>
+                  <p>圆形【海盐味】</p>
+                  <p>糖果零食</p>
+                </div>
+                <p class="price">¥<span>588.00</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh4.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>全麦奶油浓香小面包</h4>
+                  <p>50g*12袋</p>
+                  <p>美味西点</p>
+                </div>
+                <p class="price">¥<span>69.00</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh5.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>秘制外皮五福摩提大福点心</h4>
+                  <p>150g/盒</p>
+                  <p>美味西点</p>
+                </div>
+                <p class="price">¥<span>39.99</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh6.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>水果面膜韩国蜂蜜柚子茶</h4>
+                  <p>560g/瓶</p>
+                  <p>冲调饮品</p>
+                </div>
+                <p class="price">¥<span>39.99</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh7.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>浓情比利时巧克力礼盒装</h4>
+                  <p>205克/盒</p>
+                  <p>糖果零食</p>
+                </div>
+                <p class="price">¥<span>120.00</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="./uploads/fresh8.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>抹茶奶油小蛋糕礼盒装</h4>
+                  <p>220克/盒</p>
+                  <p>美味西点</p>
+                </div>
+                <p class="price">¥<span>60.00</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>发现更多宝贝<span class="iconfont icon-arrow-right-bold"></span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="topic wrapper">
+    <div class="title">
+      <div class="left">
+        <h3>最新专题</h3>
+      </div>
+      <div class="right">
+        <a href="#" class="more">查看全部<span class="iconfont icon-arrow-right-bold"></span></a>
+      </div>
+    </div>
+    <div class="topic-bd">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="pic">
+              <img src="./uploads/topic1.png" alt="">
+              <!-- 定位区域 -->
+              <div class="cover">
+                <div class="left">
+                  <h4>吃这些美食才不算辜负自己</h4>
+                  <p>餐厨起居洗护好物</p>
+                </div>
+                <div class="right">￥<span>29.9</span><span>起</span></div>
+              </div>
+            </div>
+            <div class="txt">
+              <div class="left">
+                <p>
+                  <i class="iconfont icon-favorites-fill"></i>
+                  <span>1220</span>
+                </p>
+                <p>
+                  <i class="iconfont icon-browse"></i>
+                  <span>1800</span>
+                </p>
+              </div>
+              <div class="right">
+                <p>
+                  <i class="iconfont icon-comment"></i>
+                  <span>246</span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic">
+              <img src="./uploads/topic2.png" alt="">
+              <!-- 定位区域 -->
+              <div class="cover">
+                <div class="left">
+                  <h4>吃这些美食才不算辜负自己</h4>
+                  <p>餐厨起居洗护好物</p>
+                </div>
+                <div class="right">￥<span>29.9</span><span>起</span></div>
+              </div>
+            </div>
+            <div class="txt">
+              <div class="left">
+                <p>
+                  <i class="iconfont icon-favorites-fill"></i>
+                  <span>1220</span>
+                </p>
+                <p>
+                  <i class="iconfont icon-browse"></i>
+                  <span>1800</span>
+                </p>
+              </div>
+              <div class="right">
+                <p>
+                  <i class="iconfont icon-comment"></i>
+                  <span>246</span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic">
+              <img src="./uploads/topic3.png" alt="">
+              <!-- 定位区域 -->
+              <div class="cover">
+                <div class="left">
+                  <h4>吃这些美食才不算辜负自己</h4>
+                  <p>餐厨起居洗护好物</p>
+                </div>
+                <div class="right">￥<span>29.9</span><span>起</span></div>
+              </div>
+            </div>
+            <div class="txt">
+              <div class="left">
+                <p>
+                  <i class="iconfont icon-favorites-fill"></i>
+                  <span>1220</span>
+                </p>
+                <p>
+                  <i class="iconfont icon-browse"></i>
+                  <span>1800</span>
+                </p>
+              </div>
+              <div class="right">
+                <p>
+                  <i class="iconfont icon-comment"></i>
+                  <span>246</span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="wrapper">
+      <div class="service">
+        <ul>
+          <li>
+            <h5></h5>
+            <p>价格亲民</p>
+          </li>
+          <li>
+            <h5></h5>
+            <p>物流快捷</p>
+          </li>
+          <li>
+            <h5></h5>
+            <p>品质新鲜</p>
+          </li>
+          <li>
+            <h5></h5>
+            <p>售后无忧</p>
+          </li>
+        </ul>
+      </div>
+      <div class="help">
+        <div class="left">
+          <dl>
+            <dt>购物指南</dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">支付方式</a></dd>
+            <dd><a href="#">售后规则</a></dd>
+          </dl>
+          <dl>
+            <dt>配送方式</dt>
+            <dd><a href="#">配送运费</a></dd>
+            <dd><a href="#">配送范围</a></dd>
+            <dd><a href="#">配送时间</a></dd>
+          </dl>
+          <dl>
+            <dt>关于我们</dt>
+            <dd><a href="#">平台规则</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+            <dd><a href="#">问题反馈</a></dd>
+          </dl>
+          <dl>
+            <dt>售后服务</dt>
+            <dd><a href="#">售后政策</a></dd>
+            <dd><a href="#">退款说明</a></dd>
+            <dd><a href="#">取消订单</a></dd>
+          </dl>
+          <dl>
+            <dt>服务热线</dt>
+            <dd><a href="#">在线客服<span class="iconfont icon-customer-service"></span></a></dd>
+            <dd><a href="#">客服电话 400-0000-000</a></dd>
+            <dd><a href="#">工作时间 周一至周日 8:00-18:00</a></dd>
+          </dl>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <div class="pic"><img src="./images/wechat.png" alt=""></div>
+              <p>微信公众号</p>
+            </li>
+            <li>
+              <div class="pic"><img src="./images/app.png" alt=""></div>
+              <p>APP下载二维码</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <a href="#">关于我们</a>|
+          <a href="#">帮助中心</a>|
+          <a href="#">售后服务</a>|
+          <a href="#">配送与验收</a>|
+          <a href="#">商务合作</a>|
+          <a href="#">搜索推荐</a>|
+          <a href="#">友情链接</a>
+        </p>
+        <p>CopyRight © 小兔鲜</p>
+      </div>
+    </div>
+  </div>
+  <!-- 电梯导航栏带透明 -->
+  <div class="elevator">
+    <ul class="elevator-list">
+      <li><a href="javascript:;" data-name="goods">新鲜好物</a></li>
+      <li><a href="javascript:;" data-name="recommend">人气推荐</a></li>
+      <li><a href="javascript:;" data-name="fresh">生鲜美食</a></li>
+      <li><a href="javascript:;" data-name="topic">最新专题</a></li>
+      <li><a href="javascript:;" id="backTop">返回顶部</a></li>
+    </ul>
+  </div>
+  <script>
+    //一.轮播图
+    const data = [
+      { url: './uploads/banner1.png' },
+      { url: './uploads/banner2.png' },
+      { url: './uploads/banner3.png' },
+    ]
+    // 获取元素
+    const img = document.querySelector('.pic img')
+    const next = document.querySelector('.banner')
+    let i = 0  // 信号量 控制播放图片张数
+    next.addEventListener('click', function () {
+      i++
+      i = i >= data.length ? 0 : i
+      toggle()
+    })
+    // 声明一个渲染的函数作为复用
+    function toggle() {
+      //渲染对应的数据
+      img.src = data[i].url
+      // 更换小圆点
+      document.querySelector('.banner .current').classList.remove('current')
+      document.querySelector(`.banner ol li:nth-child(${i + 1})`).classList.add('current')
+    }
+
+    //二.电梯导航
+    (function () {
+      const banner = document.querySelector('.banner')
+      const elevator = document.querySelector('.elevator')
+      window.addEventListener('scroll', function () {
+        const n = document.documentElement.scrollTop
+        elevator.style.opacity = n >= banner.offsetTop ? 1 : 0
+      })
+      const backTop = document.querySelector('.elevator #backTop')
+      backTop.addEventListener('click', function () {
+        window.scrollTo(0, 0)
+      })
+      // 自动播放模块
+      let timerId = setInterval(function () {
+        next.click()
+      }, 1500)
+      //鼠标经过大盒子，停止定时器
+      const pic = document.querySelector('.pic')
+      pic.addEventListener('mouseenter', function () {
+        clearInterval(timerId)
+      })
+      //鼠标离开大盒子，开启定时器
+      pic.addEventListener('mouseleave', function () {
+        if (timerId) clearInterval(timerId)
+        timerId = setInterval(function () {
+          next.click()
+        }, 1500)
+      })
+    })();
+    //第二个模块 点击电梯导航对应模块，页面 会跳到对应的模块位置
+    const list = document.querySelector('.elevator-list')
+    //事件委托
+    list.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && e.target.dataset.name) {
+        const n = document.querySelector('.elevator-list .active')
+        if (n) {
+          n.classList.remove('active')
+        }
+        e.target.classList.add('active')
+        const top = document.querySelector(`.${e.target.dataset.name}`).offsetTop
+        document.documentElement.scrollTop = top
+      }
+    })
+    //第三个模块 页面滚动到对应位置，电梯导航对应模块自动发生变化
+    window.addEventListener('scroll', function () {
+      const old = document.querySelector('.elevator-list .active')
+      if (old) {
+        old.classList.remove('active')
+      }
+      // 判断页面当前滑动的位置，选择小盒子
+      // 获取电梯导航栏各个元素
+      const goods = document.querySelector('.goods')
+      const recommend = document.querySelector('.recommend')
+      const fresh = document.querySelector('.fresh')
+      const topic = document.querySelector('.topic')
+      // 滚动的距离
+      const n = document.documentElement.scrollTop
+      if (n >= goods.offsetTop && n < recommend.offsetTop) {
+        // 选择第一个小盒子
+        document.querySelector('[data-name=goods]').classList.add('active')
+      } else if (n >= recommend.offsetTop && n < fresh.offsetTop) {
+        document.querySelector('[data-name=recommend]').classList.add('active')
+      } else if (n >= fresh.offsetTop && n < topic.offsetTop) {
+        document.querySelector('[data-name=fresh]').classList.add('active')
+      } else if (n >= topic.offsetTop) {
+        document.querySelector('[data-name=topic]').classList.add('active')
+      }
+    })
+    //弹窗
+    var modal = document.getElementById("myModal");
+    modal.classList.add("show");
+
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+      modal.classList.remove("show");
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 500);
+    }
+
+    //封装函数 getCountTime
+    function getCountTime() {
+      //1.获取函数
+      const now = document.querySelector('.now')
+      const hours = document.querySelector('.hours')
+      const minutes = document.querySelector('.minutes')
+      const seconds = document.querySelector('.seconds')
+      //2.实例化
+      const date = new Date()
+      //由于定时器每隔1秒执行一次，为了防止刷新留白，所以先给外面写一个当前时间
+      now.innerHTML = `今天是${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`
+      //3.设置定时器
+      setInterval(function () {
+        //3.1 年月日部分
+        now.innerHTML = `今天是${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`
+        //3.2 时分秒部分
+        //获取起始时间数
+        const endTime = +new Date('2024-06-18 00:00:00')
+        let newTime = +new Date()
+        //返回剩余时间毫秒数（也可以先转换为秒数，方便后面计算（此处未换算））
+        let surplus = endTime - newTime
+        //计算剩余时间毫秒数转换为时分秒
+        //时
+        let h = Math.floor(surplus / 1000 / 60 / 60)
+        //分
+        let m = Math.floor(surplus / 1000 / 60 % 60)
+        //秒
+        let s = Math.floor(surplus / 1000 % 60)
+        //将时分秒填在对应元素中（如果小于10则自动补0）
+        hours.innerHTML = h < 10 ? '0' + h : h
+        minutes.innerHTML = m < 10 ? '0' + m : m
+        seconds.innerHTML = s < 10 ? '0' + s : s
+      }, 1000)
+    }
+
+    modal.style.display = "block";
+    getCountTime();
+  </script>
+</body>
+
+</html>
